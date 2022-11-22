@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduplay</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div>
+        <header class="navHeader">
+            <nav class="nav">
+                <div class="navPad">
+                    <div class="flexContainer">
+                        <img class ="icon" src="icons/apple-icon-180.png">
+                        <div class="navLinks">
+                            <ul>
+                                <li class="navItem">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="navItem">
+                                    <a href="history.html">History</a>
+                                </li>
+                                <li class="navItem">
+                                    <a href="science.html">Science</a>
+                                </li>
+                                <li class="navItem">
+                                    <a href="coding.html">Coding</a>
+                                </li>   
+                            </ul>
+                        </div>
+                        <marquee class="scroller">
+                            Welcome to Eduplay the installable quiz app!
+                        </marquee>
+                        <div class="navSide">
+                            <button id="notifications">Push Notifications</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="hide holderDiv">
+        <div class="child hide">
+            <img src="resources/historyPic.png">
+        </div>
+        <div class="child hide">
+            <img src="resources/sciencePic.png">
+        </div>
+        <div class="child hide">
+            <img src="resources/codePic.png">
+        </div>      
+    </div>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+
+<footer>
+    <div class="footerContent">
+        <div class="footerNavMenu">
+            <ul class="footerMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="coding.html">Coding</a></li>
+             </ul>
+        </div>
+        <p>Alex Watt 2022 © All rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>

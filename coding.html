@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <div>
+        <header class="navHeader">
+            <nav class="nav">
+                <div class="navPad">
+                    <div class="flexContainer">
+                        <img class ="icon" src="icons/apple-icon-180.png">
+                        <div class="navLinks">
+                            <ul>
+                                <li class="navItem">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="navItem">
+                                    <a href="history.html">History</a>
+                                </li>
+                                <li class="navItem">
+                                    <a href="science.html">Science</a>
+                                </li>
+                                <li class="navItem">
+                                    <a href="coding.html">Coding</a>
+                                </li>   
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="quizHolder">
+        <div class="quizContainer" id="quiz">
+            <div class="quizHeader">
+              <h2 id="question">Question</h2>
+              <ul class="quizList">
+                <li class="quizItem">
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="aText">Answer</label>
+                </li>
+                <li class="quizItem">
+                  <input type="radio" name="answer" id="b" class="answer">
+                  <label for="b" id="bText">Answer</label>
+                </li>
+                <li class="quizItem">
+                  <input type="radio" name="answer" id="c" class="answer">
+                  <label for="c" id="cText">Answer</label>
+                </li>
+                <li class="quizItem">
+                  <input type="radio" name="answer" id="d" class="answer">
+                  <label for="d" id="dText">Answer</label>
+                </li>
+              </ul>
+            </div>
+            <button id="submit">Submit</button>
+          </div>
+    </div>
+    <script src="quizScriptCoding.js"></script>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+
+<footer>
+    <div class="footerContent">
+        <div class="footerNavMenu">
+            <ul class="footerMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="coding.html">Coding</a></li>
+             </ul>
+        </div>
+        <p>Alex Watt 2022 © All rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>
